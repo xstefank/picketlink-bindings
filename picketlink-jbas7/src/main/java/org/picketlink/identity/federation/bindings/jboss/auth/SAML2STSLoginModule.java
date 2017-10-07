@@ -31,10 +31,13 @@ import org.w3c.dom.Element;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.security.auth.Subject;
+import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.login.LoginException;
 import java.security.KeyStore;
 import java.security.PublicKey;
 import java.security.cert.Certificate;
+import java.util.Map;
 
 /**
  * <p> This {@code LoginModule} implements the local validation of SAML assertions on AS7. The specified {@code
